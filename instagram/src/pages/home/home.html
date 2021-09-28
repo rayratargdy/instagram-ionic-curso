@@ -1,0 +1,175 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <img src="assets/icon/instagram-new-logo.png">
+    </ion-title>
+
+    <ion-col class="navbarup" align-top-right add-button-right>
+      <button ion-button icon-start clear small>
+        <ion-icon name="add-circle"></ion-icon>
+      </button>
+
+      <button ion-button icon-start clear small>
+        <ion-icon name="heart-outline"></ion-icon>
+      </button>
+
+      <button ion-button icon-start clear small>
+        <ion-icon name="navigate"></ion-icon>
+      </button>
+    </ion-col>
+
+    <ion-scroll scrollX="true" text-nowrap margin-top>
+      <div class="story" text-center *ngFor="let story of stories">
+        <img [src]="story.userPicture" [alt]="'Story de + story.UserName'">
+        <span class="block">{{ story.userName }}</span>
+      </div>
+    </ion-scroll>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <!--STORIES-->
+  <!-- <ion-scroll scrollX="true" text-nowrap margin-top>
+    <div class="story" text-center *ngFor="let story of stories">
+      <img [src]="story.userPicture" [alt]="'Story de + story.UserName'">
+      <span class="block">{{ story.userName }}</span>
+    </div>
+  </ion-scroll> --> 
+
+  <ion-content padding>
+    <ion-card>
+
+      <ion-item> <!--PRIMEIRO-->
+        <ion-avatar item-start>
+          <img src="assets/icon/1.jpg"> <!--PRIMEIRO-->
+        </ion-avatar>
+        <h2>Luke Skywalker</h2>
+        <p>Pelo Mundo, Mundo</p>
+      </ion-item>
+
+      <img src="assets/icon/post_14.jpg">  <!--IMAGEM POST-->
+
+      <ion-card-content>
+        <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+          DeLorean?! Whoa. This is heavy.</p>
+      </ion-card-content>
+
+      <ion-row>
+        <ion-col> <!--LIKES-->
+          <button ion-button icon-start clear small>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>12</div>
+          </button>
+        </ion-col>
+        <ion-col> <!--COMMENT-->
+          <button ion-button icon-start clear small>
+            <ion-icon name="text"></ion-icon>
+            <div>25</div>
+          </button>
+        </ion-col>
+        <ion-col> <!--SHARE-->
+          <button ion-button icon-start clear small>
+            <ion-icon name="navigate"></ion-icon>
+            <div>Share</div>
+          </button>
+        </ion-col> 
+        <ion-col align-self-center text-center>
+          <ion-note>
+            11h ago
+          </ion-note>
+        </ion-col> 
+      </ion-row>
+
+    </ion-card>
+
+    <ion-card>
+
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/icon/2.jpg"> <!--SEGUNDO-->
+        </ion-avatar>
+        <h2>Daenerys Targaryen</h2>
+        <p>Onde a Paz Reina, Mundo</p>
+      </ion-item>
+
+      <img src="assets/icon/post_9.jpg"> <!--IMAGEM POST-->
+
+      <ion-card-content>
+        <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+          DeLorean?! Whoa. This is heavy.</p>
+      </ion-card-content>
+
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-start clear small>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>39</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-start clear small>
+            <ion-icon name="text"></ion-icon>
+            <div>10</div>
+          </button>
+        </ion-col>
+        <ion-col> <!--SHARE-->
+          <button ion-button icon-start clear small>
+            <ion-icon name="navigate"></ion-icon>
+            <div>Share</div>
+          </button>
+        </ion-col> 
+        <ion-col align-self-center text-center>
+          <ion-note>
+            11h ago
+          </ion-note>
+        </ion-col>
+      </ion-row>
+
+    </ion-card>
+
+    <ion-card>
+
+      <ion-item>
+        <ion-avatar item-start> 
+          <img src="assets/icon/3.jpg"> <!--TERCEIRO-->
+        </ion-avatar>
+        <h2>Jon Snow</h2>
+        <p>Localiza ae, Mundao</p>
+      </ion-item>
+
+      <img src="assets/icon/post_13.jpg">  <!--IMAGEM POST-->
+
+      <ion-card-content>
+        <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
+          DeLorean?! Whoa. This is heavy.</p>
+      </ion-card-content>
+
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-start clear small>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>73</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-start clear small>
+            <ion-icon name="text"></ion-icon>
+            <div>45</div>
+          </button>
+        </ion-col>
+        <ion-col> <!--SHARE-->
+          <button ion-button icon-start clear small>
+            <ion-icon name="navigate"></ion-icon>
+            <div>Share</div>
+          </button>
+        </ion-col> 
+        <ion-col align-self-center text-center>
+          <ion-note>
+            11h ago
+          </ion-note>
+        </ion-col>
+      </ion-row>
+
+    </ion-card>
+
+  </ion-content> 
